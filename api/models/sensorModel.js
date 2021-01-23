@@ -50,7 +50,7 @@ const sensorSchema = mongoose.Schema({
         required: true
     },
     rCFP: {
-        type: String,
+        type: Object,
         required: true
     },
     screen: {
