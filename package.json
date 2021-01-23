@@ -1,5 +1,5 @@
 {
-  "name": "hayai-akamai-collector",
+  "name": "hayaicollector-updated",
   "version": "1.0.0",
   "description": "Akamai Data Collector",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fourwadu/hayai-akamai-collector.git"
+    "url": "git+https://github.com/trickzsneakz/hayaicollector-updated.git"
   },
   "author": "saucesteals, fourwadu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fourwadu/hayai-akamai-collector/issues"
+    "url": "https://github.com/trickzsneakz/hayaicollector-updated/issues"
   },
-  "homepage": "https://github.com/fourwadu/hayai-akamai-collector#readme",
+  "homepage": "https://github.com/trickzsneakz/hayaicollector-updated#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
