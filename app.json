@@ -1,7 +1,7 @@
 {
     "name": "Data Collector",
     "description": "Collects browser data and stores it in your MongoDB",
-    "repository": "https://github.com/fourwadu/hayai-akamai-collector",
+    "repository": "https://github.com/trickzsneakz/hayaicollector-updated/",
     "logo": "https://abck.tech/assets/icon_circle_2.png",
     "keywords": ["node", "express", "akamai", "data", "collector"],
     "success_url": "/",
