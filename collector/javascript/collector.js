@@ -175,50 +175,66 @@ function run() {
     var rCFP = [];
     
     function canvas(a) {
+
         try {
-          var e = -1;
-          if (!sf4()) {
-            var n = document.createElement("canvas");
-            if (
-              ((n.width = 280),
-              (n.height = 60),
-              (n.style.display = "none"),
-              "function" == typeof n.getContext)
-            ) {
-              var o = n.getContext("2d");
-              (o.fillStyle = "rgb(102, 204, 0)"),
-                o.fillRect(100, 5, 80, 50),
-                (o.fillStyle = "#f60"),
-                (o.font = "16pt Arial"),
-                o.fillText(a, 10, 40),
-                (o.strokeStyle = "rgb(120, 186, 176)"),
-                o.arc(80, 10, 20, 0, Math.PI, !1),
-                o.stroke();
-              var m = n.toDataURL();
-              e = 0;
-              for (var r = 0; r < m.length; r++) {
-                (e = (e << 5) - e + m.charCodeAt(r)), (e &= e);
-              }
-              e = e.toString();
-              for (var rVal = 0; rVal != 1001; rVal++) {
-
-                var i = document.createElement("canvas")
-                    i.width = 16
-                    i.height = 16
-
-                var c = i.getContext("2d")
-                    c.font = "6pt Arial"
-                    c.fillText(rVal, 1, 12)
-
-                for (var b = i.toDataURL(), d = 0, k = 0; k < b.length; k++) {
-                    (d = (d << 5) - d + b.charCodeAt(k)), (d &= d)
+        
+            var e = -1;
+            
+            if (!sf4()) {
+            
+                var n = document.createElement("canvas");
+            
+                if (n.width = 280, n.height = 60, n.style.display = "none", "function" == typeof n.getContext) {
+        
+                    var o = n.getContext("2d");
+                    o.fillStyle = "rgb(102, 204, 0)";
+                    o.fillRect(100, 5, 80, 50);
+                    o.fillStyle = "#f60";
+                    o.font = "16pt Arial";
+                    o.fillText(a, 10, 40);
+                    o.strokeStyle = "rgb(120, 186, 176)";
+                    o.arc(80, 10, 20, 0, Math.PI, !1);
+                    o.stroke();
+        
+                    var m = n.toDataURL();
+                    e = 0;
+                    
+                    for (var r = 0; r < m.length; r++) {
+                        (e = (e << 5) - e + m.charCodeAt(r)), (e &= e);
+                    }
+                    
+                    e = e.toString();
                 }
-
-                rCFP.push(d)
             }
-
-            return rCFP
-        }
+        
+            return e;
+        
+        } catch (a) {};
+        
+    };
+      
+    function canvas2() {
+        var rCFP = [];
+        
+        for (var rVal = 0; rVal != 1001; rVal++) {
+        
+            var i = document.createElement("canvas");
+                i.width = 16;
+                i.height = 16;
+        
+            var c = i.getContext("2d");
+                c.font = "6pt Arial";
+                c.fillText(rVal, 1, 12);
+        
+            for (var b = i.toDataURL(), d = 0, k = 0; k < b.length; k++) {
+                (d = (d << 5) - d + b.charCodeAt(k)), (d &= d);
+            };
+        
+            rCFP.push(d);
+        };
+        
+        return rCFP;
+    };
     function uar() {
         return window.navigator.userAgent.replace(/\\|"/g, "");
     }
