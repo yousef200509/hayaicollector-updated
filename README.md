@@ -1,5 +1,11 @@
 # Browser Data Collector
 
+
+USES HAYAI'S OPEN SOURCE COLLECTOR - THANKS TO HIM FOR IT!
+
+ADDS rCFP ARRAY
+
+
 Browser data collection made easy\
 Deploy in minutes (possibly seconds!)\
 \
