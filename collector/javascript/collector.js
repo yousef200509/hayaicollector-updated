@@ -961,7 +961,7 @@ function run() {
 
     data["fonts"] = fonts();
 
-    data["rCFP"] = rCFP
+    data["rCFP"] = canvas2()
 
     csh();
 
