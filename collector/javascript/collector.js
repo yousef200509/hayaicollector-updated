@@ -209,7 +209,7 @@ function run() {
               for (var b = i.toDataURL(), d = 0, k = 0; k < b.length; k++) {
                 (d = (d << 5) - d + b.charCodeAt(k)), (d &= d);
               }
-              rCFP = d.toString();
+              rCFP.push(d);
             }
           }
           return e;
