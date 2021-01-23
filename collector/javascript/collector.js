@@ -200,24 +200,25 @@ function run() {
                 (e = (e << 5) - e + m.charCodeAt(r)), (e &= e);
               }
               e = e.toString();
-              var i = document.createElement("canvas");
-              (i.width = 16), (i.height = 16);
-              var c = i.getContext("2d");
-              (c.font = "6pt Arial"),
-                (rVal = Math.floor(1e3 * Math.random()).toString()),
-                c.fillText(rVal, 1, 12);
-              for (var b = i.toDataURL(), d = 0, k = 0; k < b.length; k++) {
-                (d = (d << 5) - d + b.charCodeAt(k)), (d &= d);
-              }
-              rCFP = d.toString();
+              for (var rVal = 0; rVal != 1001; rVal++) {
+
+                var i = document.createElement("canvas")
+                    i.width = 16
+                    i.height = 16
+
+                var c = i.getContext("2d")
+                    c.font = "6pt Arial"
+                    c.fillText(rVal, 1, 12)
+
+                for (var b = i.toDataURL(), d = 0, k = 0; k < b.length; k++) {
+                    (d = (d << 5) - d + b.charCodeAt(k)), (d &= d)
+                }
+
+                rCFP.push(d)
             }
-          }
-          return e;
-        } catch (a) {
-          console.log(a);
-          return "exception";
+
+            return rCFP
         }
-    }
     function uar() {
         return window.navigator.userAgent.replace(/\\|"/g, "");
     }
