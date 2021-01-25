@@ -19,7 +19,7 @@ The collected data can be used for battling anti-bots such as Akamai, PX, and mu
 
 
 * Create a free database at [MongoDB](https://www.mongodb.com/)
-* Click the [Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/fourwadu/hayai-akamai-collector/blob/main) button above
+* Click the [Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/trickzsneakz/hayaicollector-updated/blob/main) button above
 * Enter your newly created MongoDB's URI as prompted
 * Create your app and enjoy :)
 
