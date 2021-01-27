@@ -17,6 +17,12 @@ const sensorSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    
+    fmz: {
+        type: String,
+        required: true
+    },
+    
     fonts: {
         type: String,
         required: true
