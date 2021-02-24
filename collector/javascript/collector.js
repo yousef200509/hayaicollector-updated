@@ -111,6 +111,8 @@ function run() {
     data.navigator.javaEnabled = navigator['javaEnabled'] ? navigator['javaEnabled']() : -1
     data.navigator.doNotTrack = navigator['doNotTrack'] ? navigator['doNotTrack'] : -1;
 
+
+    data.window.ActiveXObject = Boolean(window['ActiveXObject']) || 'ActiveXObject' in window
     data.window.innerHeight = window.innerHeight;
     data.window.innerWidth = window.innerWidth;
     data.window.outerWidth = window.outerWidth;
@@ -120,6 +122,7 @@ function run() {
     data.window.XMLHttpRequest = Boolean(window['XMLHttpRequest'])
     data.window.XDomainRequest = Boolean(window['XDomainRequest'])
     data.window.emit = window.emit
+    data.window.orientation = typeof window['orientation'];
     data.window.DeviceOrientationEvent = Boolean(window['DeviceOrientationEvent'])
     data.window.DeviceMotionEvent = Boolean(window['DeviceMotionEvent'])
     data.window.TouchEvent = Boolean(window['TouchEvent'])
@@ -1029,14 +1032,14 @@ function run() {
     np();
 
 }
-
+/*
 if (typeof window.orientation !== 'undefined') {
   document.getElementById('statusMessage').innerHTML = 'Unfortunately, we do not support mobile yet!'
   document.getElementById('message2').innerHTML = 'But thanks for trying <3'
-} else {
+} else {*/
 window.onload = function () {
     setTimeout(function () {
       run();
     }, 2000);
 
-}}
+}
