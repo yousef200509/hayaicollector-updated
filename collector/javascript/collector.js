@@ -110,6 +110,7 @@ function run() {
     data.navigator.cookieEnabled = navigator['cookieEnabled'] ? navigator['cookieEnabled'] : -1
     data.navigator.javaEnabled = navigator['javaEnabled'] ? navigator['javaEnabled']() : -1
     data.navigator.doNotTrack = navigator['doNotTrack'] ? navigator['doNotTrack'] : -1;
+    data.navigator.webdriver = void 0 !== navigator.webdriver && navigator.webdriver
 
 
     data.window.ActiveXObject = Boolean(window['ActiveXObject']) || 'ActiveXObject' in window
