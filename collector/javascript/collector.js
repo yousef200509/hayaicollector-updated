@@ -110,6 +110,7 @@ function run() {
     data.navigator.cookieEnabled = navigator['cookieEnabled'] ? navigator['cookieEnabled'] : -1
     data.navigator.javaEnabled = navigator['javaEnabled'] ? navigator['javaEnabled']() : -1
     data.navigator.doNotTrack = navigator['doNotTrack'] ? navigator['doNotTrack'] : -1;
+    data.navigator.webdriver = navigator.webdriver ? navigator.webdriver : -1
 
 
     data.window.ActiveXObject = Boolean(window['ActiveXObject']) || 'ActiveXObject' in window
@@ -143,6 +144,39 @@ function run() {
     data.window.HTMLElement = window['HTMLElement'] && Object['prototype']['toString']['call'](window['HTMLElement'])['indexOf']('Constructor') > 0
     data.window.webRTC = 'function' == typeof window['RTCPeerConnection'] || 'function' == typeof window['mozRTCPeerConnection'] || 'function' == typeof window['webkitRTCPeerConnection']
     data.window.mozInnerScreenY = 'mozInnerScreenY' in window ? window['mozInnerScreenY'] : 0
+    data.window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.cdc_adoQpoasnfa76pfcZLmcfl_Array
+    data.window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.cdc_adoQpoasnfa76pfcZLmcfl_Promise
+    data.window.cdc_adoQpoasnfa76pfcZLmcfl_Symbol = window.cdc_adoQpoasnfa76pfcZLmcfl_Symbol
+    data.window.OSMJIF = window.OSMJIF
+    data.window._Selenium_IDE_Recorder = window._Selenium_IDE_Recorder
+    data.window.__$webdriverAsyncExecutor = window.__$webdriverAsyncExecutor
+    data.window.__driver_evaluate = window.__driver_evaluate
+    data.window.__driver_unwrapped = window.__driver_unwrapped
+    data.window.__fxdriver_evaluate = window.__fxdriver_evaluate
+    data.window.__fxdriver_unwrapped = window.__fxdriver_unwrapped
+    data.window.__lastWatirAlert = window.__lastWatirAlert
+    data.window.__lastWatirConfirm = window.__lastWatirConfirm
+    data.window.__lastWatirPrompt = window.__lastWatirPrompt
+    data.window.__phantomas = window.__phantomas
+    data.window.__selenium_evaluate = window.__selenium_evaluate
+    data.window.__selenium_unwrapped = window.__selenium_unwrapped
+    data.window.__webdriverFuncgeb = window.__webdriverFuncgeb
+    data.window.__webdriver__chr = window.__webdriver__chr
+    data.window.__webdriver_evaluate = window.__webdriver_evaluate
+    data.window.__webdriver_script_fn = window.__webdriver_script_fn
+    data.window.__webdriver_script_func = window.__webdriver_script_func
+    data.window.__webdriver_script_function = window.__webdriver_script_function
+    data.window.__webdriver_unwrapped = window.__webdriver_unwrapped
+    data.window.awesomium = window.awesomium
+    data.window.callSelenium = window.callSelenium
+    data.window.calledPhantom = window.calledPhantom
+    data.window.calledSelenium = window.calledSelenium
+    data.window.domAutomationController = window.domAutomationController
+    data.window.watinExpressionError = window.watinExpressionError
+    data.window.watinExpressionResult = window.watinExpressionResult
+    data.window.spynner_additional_js_loaded = window.spynner_additional_js_loaded
+    data.window.fmget_targets = window.fmget_targets
+    data.window.geb = window.geb
 
     data.document.documentMode = typeof document['documentMode']
     data.document.webdriver = window['document']['documentElement']['getAttribute']('webdriver') != null
@@ -152,6 +186,7 @@ function run() {
     data.document.mozHidden = document['mozHidden']
     data.document.msHidden = document['msHidden']
     data.document.webkitHidden = document['webkitHidden']
+    data.document.$chrome_asyncScriptInfo = document.$chrome_asyncScriptInfo
 
     data.other.CC_ON = new Function('return/*@cc_on!@*/!1')()
     data.other.InstallTrigger = 'undefined' != typeof InstallTrigger
